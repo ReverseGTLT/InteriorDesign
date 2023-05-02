@@ -1,6 +1,6 @@
 const burgerOpen = document.querySelector('.burger');
 const burgerClose = document.querySelector('.burger-close');
-const navbar = document.querySelector('.nav');
+const navbar = document.querySelector('.menu');
 
 burgerOpen.addEventListener('click', onBurgerOpen);
 burgerClose.addEventListener('click', onBurgerClose);

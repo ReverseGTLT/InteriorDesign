@@ -85,7 +85,7 @@ a {
 }
 
 @media (max-width: 991.8px) {
-  .nav {
+  .menu {
     display: none;
     position: fixed;
     top: 0;
@@ -98,32 +98,32 @@ a {
   }
 }
 
-.menu__list {
+.nav__list {
   display: flex;
   align-items: center;
   gap: 75px;
 }
 @media (max-width: 991.8px) {
-  .menu__list {
+  .nav__list {
     gap: 40px;
   }
 }
 @media (max-width: 991.8px) {
-  .menu__list {
+  .nav__list {
     flex-direction: column;
     padding-top: 80px;
   }
 }
-.menu__list-item__link {
+.nav__list-item__link {
   color: #ffffff;
   transition: 0.2s;
 }
 @media (max-width: 991.8px) {
-  .menu__list-item__link {
+  .nav__list-item__link {
     color: #222222;
   }
 }
-.menu__list-item__link:hover {
+.nav__list-item__link:hover {
   color: #ffae00;
 }
 
