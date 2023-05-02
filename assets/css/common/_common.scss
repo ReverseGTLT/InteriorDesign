@@ -1,0 +1,27 @@
+@use "../presets" as *;
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  max-width: 1920px;
+}
+.container {
+  max-width: 1170px;
+  margin-inline: auto;
+}
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+

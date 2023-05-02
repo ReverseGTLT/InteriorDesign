@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  max-width: 1920px;
+}
+
+.container {
+  max-width: 1170px;
+  margin-inline: auto;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-color: #222222;
+  height: 70px;
+}
+
+.container--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.nav {
+  padding-right: 20px;
+}
+
+.logo__link {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.logo__title {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 19px;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  gap: 75px;
+}
+.menu__list-item {
+  color: #ffffff;
+  transition: 0.2s;
+}
+.menu__list-item:hover {
+  color: #ffae00;
+}
+
+.accent {
+  color: #ffae00;
+}
+
+.before {
+  position: relative;
+}
+.before::before {
+  position: absolute;
+  content: "";
+  top: 4px;
+  right: -18px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  transform: rotateZ(135deg);
+}
+
+/*# sourceMappingURL=index.css.map */

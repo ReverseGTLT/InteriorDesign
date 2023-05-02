@@ -1,0 +1,64 @@
+@use "../presets" as *;
+
+.header {
+  background-color: $bg-dark;
+  height: 70px;
+}
+
+.container--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.nav {
+  padding-right: 20px;
+}
+
+.logo {
+  &__link {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  &__title {
+    color: $color-white;
+    font-size: $logo-title-font-size;
+    line-height: $logo-title-line-hight;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 75px;
+    &-item {
+      color: $color-white;
+      transition: 0.2s;
+      &:hover {
+        color: $color-accent;
+      }
+    }
+  }
+}
+
+.accent {
+  color: $color-accent;
+}
+
+.before {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: '';
+    top: 4px;
+    right: -18px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid $color-white;
+    border-right: 2px solid $color-white;
+    transform: rotateZ(135deg);
+  }
+}
