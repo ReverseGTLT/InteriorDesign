@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="assets/css/index.css">
 
     <script defer src="https://kit.fontawesome.com/c8bedb907c.js" crossorigin="anonymous"></script>
+    <script defer src="assets/js/index.js"></script>
     <title>About us</title>
 </head>
 <body>
+    <div class="burger">
+        <i class="fa-sharp fa-solid fa-bars color-white"></i>
+    </div>
     <header class="header">
        <div class="container container--header">
            <div class="logo">
@@ -23,17 +27,128 @@
                </a>
            </div>
            <nav class="nav">
+               <div class="burger-close">
+                   <i class="fa-solid fa-xmark color-black"></i>
+               </div>
                <menu class="menu">
                    <ul class="menu__list">
-                       <li><a class="menu__list-item" href="#">Home</a></li>
-                       <li><a class="menu__list-item accent" href="#">About Us</a></li>
-                       <li><a class="menu__list-item" href="">Projects</a></li>
-                       <li><a class="menu__list-item" href="">Contacts</a></li>
-                       <li><a class="menu__list-item before" href="">Extra</a></li>
+                       <li class="menu__list-item"><a class="menu__list-item__link" href="#">Home</a></li>
+                       <li class="menu__list-item"><a class="menu__list-item__link accent" href="#">About Us</a></li>
+                       <li class="menu__list-item"><a class="menu__list-item__link" href="">Projects</a></li>
+                       <li class="menu__list-item"><a class="menu__list-item__link" href="">Contacts</a></li>
+                       <li class="menu__list-item">
+                           <a class="menu__list-item__link" href="">Extra
+                               <i class="fa-sharp fa-solid fa-angle-down"></i>
+                           </a>
+                       </li>
                    </ul>
                </menu>
            </nav>
        </div>
     </header>
+    <section class="about">
+        <div class="container container--about">
+            <h1 class="about__title">about us</h1>
+            <ul class="breadcrumb">
+                <li class="breadcrumb__item">
+                    <a class="breadcrumb__item-link" href="#">Home</a>
+                </li>
+                <li class="breadcrumb__item">
+                    <i class="fa-sharp fa-solid fa-angle-double-right" style="color: #ffffff;"></i>
+                </li>
+                <li class="breadcrumb__item">
+                    <a class="breadcrumb__item-link accent" href="#">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="agency">
+        <div class="container">
+            <h2 class="heading">About agency</h2>
+            <div class="agency__wrapper">
+                <div class="agency__wrapper-image">
+                    <img src="image/agency-bg.png" alt="" class="agency__info-image__picture">
+                </div>
+                <div class="agency__info">
+                    <p class="text-description">
+                        Donec auctor, arcu sit amet mollis vehicula, erat leo feugiat est, id porta ante dolor blandit ipsum. Sed maximus turpis accumsan, aliquam odio a, placerat risus. Maecenas a nibh ut lectus malesuada auctor non in purus. Fusce elementum nisl sit amet laoreet dapibus. Aliquam vitae ipsum quam.
+                    </p>
+                    <p class="text-description">
+                        Morbi quis sem vel lorem rutrum lobortis. Aliquam erat volutpat. Nunc sollicitudin diam urna, quis accumsan erat venenatis at. Morbi vestibulum non ipsum quis lobortis.
+                    </p>
+                    <h3 class="text-title">Why Choose Us</h3>
+                    <div class="agency__info-wrapper">
+                        <i class="fa-sharp fa-solid fa-check " style="color: #ffae00"></i>
+                        <p class="text-description">Nullam a suscipit tellus.</p>
+                    </div>
+                    <div class="agency__info-wrapper">
+                        <i class="fa-sharp fa-solid fa-check " style="color: #ffae00"></i>
+                        <p class="text-description">Suspendisse est dolor, pharetra sed porta quis, mollis vulputate nibh.</p>
+                    </div>
+                    <div class="agency__info-wrapper">
+                        <i class="fa-sharp fa-solid fa-check " style="color: #ffae00"></i>
+                        <p class="text-description">Fusce at massa ultrices, interdum enim quis, aliquam leo.</p>
+                    </div>
+                    <div class="agency__info-wrapper">
+                        <i class="fa-sharp fa-solid fa-check " style="color: #ffae00"></i>
+                        <p class="text-description">Vestibulum viverra nibh a sapien venenatis varius.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="offers">
+        <div class="container">
+            <h2 class="heading">What we doing</h2>
+            <div class="offers__wrapper">
+                <a href="#">
+                    <div class="offers__card">
+                        <div class="offers__card-image">
+                            <img src="image/card-1.png" alt="card" class="offers__card-image__picture">
+                        </div>
+                        <div class="offers__card-info">
+                            <h3 class="text-title">Office Design</h3>
+                            <p class="text-description">Aenean id nisi tortor. Nullam enim ante, blandit non sollicitudin at, consectetur vel lorem. Duis interdum orci et neque interdum luctus. Vestibulum aliquet tincidunt mollis. Quisque sagittis nunc sit amet justo mattis volutpat. Sed id nunc at massa eleifend vestibulum.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="offers__card">
+                        <div class="offers__card-image">
+                            <img src="image/card-2.png" alt="card" class="offers__card-image__picture">
+                        </div>
+                        <div class="offers__card-info">
+                            <h3 class="text-title">apartment design</h3>
+                            <p class="text-description">Cras lacus nulla, efficitur vitae ante ut, vulputate congue odio. Ut placerat dignissim ultricies. Fusce non sem nec orci dignissim vestibulum. Morbi risus dolor, fringilla vitae elementum nec, hendrerit a neque. Pellentesque eu ullamcorper leo, eget volutpat diam.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="offers__card">
+                        <div class="offers__card-image">
+                            <img src="image/card-3.png" alt="card" class="offers__card-image__picture">
+                        </div>
+                        <div class="offers__card-info">
+                            <h3 class="text-title">Commercial Design</h3>
+                            <p class="text-description">Aenean id nisi tortor. Nullam enim ante, blandit non sollicitudin at, consectetur vel lorem. Duis interdum orci et neque interdum luctus. Vestibulum aliquet tincidunt mollis. Quisque sagittis nunc sit amet justo mattis volutpat. Sed id nunc at massa eleifend vestibulum.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container container--footer">
+            <div class="footer-info">
+                <p class="text-footer">© Interior Design 2020. All Rights Reserved.</p>
+            </div>
+            <div class="footer-social">
+                <a href=""><i class="fa-brands fa-facebook-f color-regular"></i></a>
+                <a href=""><i class="fa-brands fa-twitter color-regular accent"></i></a>
+                <a href=""><i class="fa-brands fa-instagram color-regular"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin color-regular"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

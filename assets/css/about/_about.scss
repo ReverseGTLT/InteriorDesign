@@ -1,0 +1,50 @@
+@use "../common" as *;
+@use "../presets" as *;
+
+.container--about {
+  height: 100% ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  background-image: url('../../image/about.png');
+  background-position-x: -200px;
+  height: 500px;
+  @include md {
+    height: calc(100vh - 70px);
+    background-size: cover;
+  }
+  &__title {
+    max-width: 80%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: $about-title-font-size;
+    line-height: $about-title-line-hight;
+    color: $color-white;
+    @include md {
+      font-size: $main-heading-font-size;
+      line-height: $main-heading-line-hight;
+    }
+  }
+}
+
+.breadcrumb {
+  display: flex;
+  gap: 6px;
+  &__item {
+    &-link {
+      color: $color-white;
+      transition: 0.2s;
+      &:hover {
+        color: $color-accent;
+      }
+    }
+  }
+}
+
+.accent {
+  color: $color-accent;
+}

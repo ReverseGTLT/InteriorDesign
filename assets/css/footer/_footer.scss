@@ -1,0 +1,44 @@
+@use "../common" as *;
+@use "../presets" as *;
+
+.container--footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include sm {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.footer {
+  padding-top: 14px;
+  background-color: $bg-dark;
+  padding-bottom: 14px;
+  &-info {
+    @include sm {
+      margin-inline: auto;
+    }
+  }
+  &-social {
+    display: flex;
+    gap: 23px;
+    padding-right: 12px;
+    @include sm {
+      margin-inline: auto;
+      padding-bottom: 14px;
+    }
+  }
+}
+
+.color-regular {
+  color: $color-footer;
+  transition: 0.2s;
+  &:hover {
+    color: $color-accent;
+  }
+}
+
+.accent {
+  color: $color-accent;
+}

@@ -13,6 +13,7 @@ body {
   max-width: 1920px;
 }
 .container {
+  padding-inline: 15px;
   max-width: 1170px;
   margin-inline: auto;
 }
@@ -25,3 +26,36 @@ a {
   text-decoration: none;
 }
 
+.heading {
+  font-size: $main-heading-font-size;
+  line-height: $main-heading-line-hight;
+  text-transform: uppercase;
+  color: $color-black;
+  text-align: center;
+  font-weight: $bold-font-weight;
+  padding-bottom: 45px;
+}
+
+.text-description {
+  font-size: $description-font-size;
+  line-height: $description-line-hight;
+  color: $color-black;
+  font-weight: $regular-font-weight;
+  padding-bottom: 12px;
+}
+
+.text-title {
+  font-size: $title-font-size;
+  line-height: $title-line-hight;
+  color: $color-black;
+  font-weight: $bold-font-weight;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.text-footer {
+  font-size: $footer-font-size;
+  line-height: $footer-line-hight;
+  color: $color-footer;
+  font-weight: $regular-font-weight;
+}

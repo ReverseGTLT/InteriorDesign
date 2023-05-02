@@ -1,3 +1,4 @@
+@use "../common" as *;
 @use "../presets" as *;
 
 .header {
@@ -10,10 +11,6 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 15px;
-}
-
-.nav {
-  padding-right: 20px;
 }
 
 .logo {
@@ -29,16 +26,43 @@
   }
 }
 
+.nav {
+  @include lg {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+    background-color: $color-white;
+
+    animation-duration: 0.5s;
+    animation-name: open;
+  }
+}
+
 .menu {
   &__list {
     display: flex;
     align-items: center;
     gap: 75px;
+    @include lg {
+      gap: 40px;
+    }
+    @include lg {
+      flex-direction: column;
+      padding-top: 80px;
+    }
     &-item {
-      color: $color-white;
-      transition: 0.2s;
-      &:hover {
-        color: $color-accent;
+      &__link {
+        color: $color-white;
+        transition: 0.2s;
+        @include lg {
+          color: $color-black;
+        }
+        &:hover {
+          color: $color-accent;
+        }
       }
     }
   }
@@ -48,17 +72,14 @@
   color: $color-accent;
 }
 
-.before {
-  position: relative;
-  &::before {
-    position: absolute;
-    content: '';
-    top: 4px;
-    right: -18px;
-    width: 10px;
-    height: 10px;
-    border-top: 2px solid $color-white;
-    border-right: 2px solid $color-white;
-    transform: rotateZ(135deg);
+@keyframes open {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 80%;
   }
 }

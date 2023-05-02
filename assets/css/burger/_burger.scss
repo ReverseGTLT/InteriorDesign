@@ -1,0 +1,37 @@
+@use "../common" as *;
+@use "../presets" as *;
+
+.burger {
+  position: absolute;
+  top: 28px;
+  right: 25px;
+  cursor: pointer;
+  display: none;
+  @include lg {
+    display: block;
+  }
+}
+
+.color-white {
+  color: $color-white;
+  transition: 0.2s;
+  &:hover {
+    color: $color-accent;
+  }
+}
+
+.color-black {
+  color: $color-black;
+  transition: 0.2s;
+  position: absolute;
+  top: 28px;
+  right: 25px;
+  cursor: pointer;
+  &:hover {
+    color: $color-accent;
+  }
+}
+
+.visible {
+  display: block;
+}

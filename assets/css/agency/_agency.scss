@@ -1,0 +1,40 @@
+@use "../common" as *;
+@use "../presets" as *;
+
+.agency {
+  padding-top: 75px;
+  padding-bottom: 80px;
+  background-color: $color-white;
+  @include md {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  &__wrapper {
+    display: flex;
+    gap: 30px;
+    @include lg {
+      flex-direction: column;
+    }
+    &-image {
+      width: 570px;
+      @include lg {
+        margin-inline: auto;
+      }
+      @include md {
+        width: 100%;
+      }
+      img {
+        @include lg {
+          width: 100%;
+        }
+      }
+    }
+  }
+  &__info {
+    &-wrapper {
+      display: flex;
+      gap: 7px;
+      align-items: baseline;
+    }
+  }
+}
